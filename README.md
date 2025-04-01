@@ -10,6 +10,22 @@ The **Workshop Management System** is a web-based application designed to stream
 - **MySQL Database**: Stores workshop details securely.
 - **Admin Panel**: Manage workshops via Django’s built-in admin interface.
 
+## Database Structure
+The system uses the `workshop_app_workshop` table to store workshop details.
+
+| Column Name       | Data Type    | Constraints                  | Description                                  |
+|------------------|------------|-----------------------------|----------------------------------------------|
+| id              | BIGINT      | PRIMARY KEY, AUTO_INCREMENT | Unique identifier for each workshop.        |
+| title           | VARCHAR(200)| NOT NULL                    | Title of the workshop.                      |
+| description     | TEXT        | NOT NULL                    | Detailed description of the workshop.       |
+| trainer         | VARCHAR(100)| NOT NULL                    | Name of the trainer/presenter.              |
+| date           | DATE        | NOT NULL                    | Date of the workshop (format: YYYY-MM-DD).  |
+| time           | TIME        | NOT NULL                    | Time of the workshop (format: HH:MM:SS).    |
+| location       | VARCHAR(200)| NOT NULL                    | Location where the workshop will be held.   |
+| target_audience| VARCHAR(200)| NOT NULL                    | Target audience for the workshop.           |
+
+
+
 ## Technologies Used
 - **Backend**: Django, Django REST Framework
 - **Frontend**: HTML, CSS, JavaScript (Django templates)
