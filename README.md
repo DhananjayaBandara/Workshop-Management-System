@@ -103,7 +103,7 @@ For production deployment:
 This project is licensed under the MIT License. See `LICENSE` for details.
 
 ## Author
-[P.R.P. Dhananjaya Bandara](https://github.com/username)
+[P.R.P. Dhananjaya Bandara](https://github.com/DhananjayaBandara)
 
 ## Contributions
 Contributions are welcome! Feel free to submit a pull request or report issues.
