@@ -124,3 +124,28 @@ This project is licensed under the MIT License. See `LICENSE` for details.
 ## Contributions
 Contributions are welcome! Feel free to submit a pull request or report issues.
 
+
+## Screen Views
+Showing the list of workshops in landing page
+![1](https://github.com/user-attachments/assets/0142b1f0-9b9c-4a7f-b961-c032e319d621)
+
+Click on 'Create New Workshop' to create a new workshop
+![2_createNewWorkshop](https://github.com/user-attachments/assets/626c704a-9d3f-49ac-b239-fa9072b761c6)
+
+User can fill the text fields and choose a date and time
+![3_fillData](https://github.com/user-attachments/assets/24d68b22-cdf8-45c1-96f9-4426faf078a6)
+
+After click the save button again show the list of workshops available
+![4_workshopList](https://github.com/user-attachments/assets/1fe74719-61e3-4926-b4b6-f20236284e06)
+
+Click on title of the workshop to view the details of the respective workshop
+![5_workshopDetails](https://github.com/user-attachments/assets/92da4937-9393-4d7c-a20d-f343146d1283)
+
+Click on Delete button to delete any workshop
+![6_deleteConfirmation](https://github.com/user-attachments/assets/6df87496-2d39-4547-9465-388bbf65ff03)
+
+
+
+
+
+
