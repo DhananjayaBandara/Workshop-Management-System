@@ -1,0 +1,11 @@
+<h1>Workshops</h1>
+<a href="{% url 'workshop_create' %}">Create New Workshop</a>
+<ul>
+    {% for workshop in workshops %}
+        <li>
+            <a href="{% url 'workshop_detail' workshop.id %}">{{ workshop.title }}</a>
+            <a href="{% url 'workshop_update' workshop.id %}">Edit</a>
+            <a href="{% url 'workshop_delete' workshop.id %}">Delete</a>
+        </li>
+    {% endfor %}
+</ul>

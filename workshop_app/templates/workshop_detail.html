@@ -1,0 +1,8 @@
+<h1>{{ workshop.title }}</h1>
+<p>{{ workshop.description }}</p>
+<p>Trainer: {{ workshop.trainer }}</p>
+<p>Date: {{ workshop.date }}</p>
+<p>Time: {{ workshop.time }}</p>
+<p>Location: {{ workshop.location }}</p>
+<p>Target Audience: {{ workshop.target_audience }}</p>
+<a href="{% url 'workshop_list' %}">Back to list</a>

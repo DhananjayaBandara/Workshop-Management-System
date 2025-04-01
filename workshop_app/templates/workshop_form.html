@@ -1,0 +1,32 @@
+<form method="post">
+    {% csrf_token %}
+    {% if errors %}
+        <ul>
+            {% for field, error_list in errors.items %}
+                <li>{{ field }}: {{ error_list|join:", " }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+    <label>Title:</label>
+    <input type="text" name="title" value="{{ workshop.title|default:'' }}"><br>
+
+    <label>Description:</label>
+    <textarea name="description">{{ workshop.description|default:'' }}</textarea><br>
+
+    <label>Trainer:</label>
+    <input type="text" name="trainer" value="{{ workshop.trainer|default:'' }}"><br>
+
+    <label>Date:</label>
+    <input type="date" name="date" value="{{ workshop.date|date:'Y-m-d'|default:'' }}"><br>
+
+    <label>Time:</label>
+    <input type="time" name="time" value="{{ workshop.time|time:'H:i'|default:'' }}"><br>
+
+    <label>Location:</label>
+    <input type="text" name="location" value="{{ workshop.location|default:'' }}"><br>
+
+    <label>Target Audience:</label>
+    <input type="text" name="target_audience" value="{{ workshop.target_audience|default:'' }}"><br>
+
+    <button type="submit">Save</button>
+</form>
