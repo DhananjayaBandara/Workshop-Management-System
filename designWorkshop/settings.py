@@ -75,8 +75,12 @@ WSGI_APPLICATION = 'designWorkshop.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'workshop_management_db',  
+        'USER': 'root',         
+        'PASSWORD': 'user', 
+        'HOST': '127.0.0.1',
+        'PORT': '3306',
     }
 }
 
